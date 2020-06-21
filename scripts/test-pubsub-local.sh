@@ -6,7 +6,7 @@ MESSAGE_BASE64=$(echo ${RAW_MESSAGE} | base64)
 EVENT_PAYLOAD=$(
   sed -e \
     "s|__DATA_BASE64_PLACEHOLDER__|${MESSAGE_BASE64}|g" \
-    test-local-payload.json
+    ./payloads/test-local-pubsub-payload.json
 )
 
 curl -X POST \
