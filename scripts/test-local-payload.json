@@ -1,0 +1,15 @@
+{
+  "eventType": "com.example.someevent",
+  "resource": "FooBar",
+  "eventId": "B234-1234-1234",
+  "timestamp": "2020-06-20T17:31:00Z",
+  "data": {
+    "data": "__DATA_BASE64_PLACEHOLDER__",
+    "attributes": {
+      "foo": "bar",
+      "bar": "baz"
+    },
+    "messageId": "foo",
+    "publishTime": "2020-06-20T17:35:00Z"
+  }
+}
