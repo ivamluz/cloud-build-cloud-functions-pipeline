@@ -53,8 +53,8 @@ From a different terminal window:
 
 `test-localsh` does the following behind the scenes:
 
-- encodes the message passed as parameter in base64 format;
-- reads the contents of `test-local-payload.json` and replaces its `data` property with the base64 encoded message;
+- encodes the message passed as parameter in **base64** format;
+- reads the contents of `test-local-payload.json` and replaces its `data` property with the **base64** encoded message;
 - perform an HTTP post request to `http://localhost:8080` (the default address the application runs when you execute `./run-local.sh` from the other terminal window), sending the modified JSON from the previous step in the payload.
 
 On the terminal window where you ran `./run.sh` you should see some logs showing a message was received.
