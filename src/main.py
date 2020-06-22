@@ -1,9 +1,15 @@
 import base64
 
-from flask import current_app
+from flask import current_app, escape
+
+def sample_http(request):
+    subject = request.args.get('subject', 'World')
+    subject = escape(subject)
+    
+    return f'Hello, {subject}!'
 
 
-def log_pubsub(event, context):
+def sample_pubsub(event, context):
     """Background Cloud Function to be triggered by Pub/Sub.
     Args:
          event (dict):  The dictionary with data specific to this type of

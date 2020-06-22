@@ -51,7 +51,7 @@ From a different terminal window:
 ./test-local.sh "my message"
 ```
 
-`test-localsh` does the following behind the scenes:
+`test-local.sh` does the following behind the scenes:
 
 - encodes the message passed as parameter in **base64** format;
 - reads the contents of `test-local-payload.json` and replaces its `data` property with the **base64** encoded message;

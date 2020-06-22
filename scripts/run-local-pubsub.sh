@@ -1,6 +1,6 @@
 #! /bin/bash
 
-FUNCTION_NAME=$(cat function-name)
+FUNCTION_NAME=$(cat function-name-pubsub)
 
 functions-framework \
   --source=../src/main.py \
