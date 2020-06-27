@@ -1,9 +1,10 @@
 #! /bin/bash
 
-FUNCTION_NAME=$(cat function-name-pubsub)
+source .env
 
 functions-framework \
   --source=../src/main.py \
-  --target=${FUNCTION_NAME} \
+  --target=${FUNCTION_NAME_PUBSUB} \
   --signature-type=event \
+  --port ${FUNCTION_PORT_PUBSUB} \
   --debug

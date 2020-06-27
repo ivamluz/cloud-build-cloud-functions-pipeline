@@ -9,7 +9,9 @@ EVENT_PAYLOAD=$(
     ./payloads/test-local-pubsub-payload.json
 )
 
+source .env
+
 curl -X POST \
   -H'Content-type: application/json' \
   -d "${EVENT_PAYLOAD}" \
-  http://localhost:8080
+  "http://localhost:${FUNCTION_PORT_PUBSUB}"
