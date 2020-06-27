@@ -1,8 +1,18 @@
 import base64
+import pprint as pp
 
 from flask import current_app, escape
 
 def sample_http(request):
+    """HTTP Cloud Function.
+    Args:
+        request (flask.Request): The request object.
+        <http://flask.pocoo.org/docs/1.0/api/#flask.Request>
+    Returns:
+        The response text, or any set of values that can be turned into a
+        Response object using `make_response`
+        <http://flask.pocoo.org/docs/1.0/api/#flask.Flask.make_response>.
+    """
     subject = request.args.get('subject', 'World')
     subject = escape(subject)
     
@@ -23,10 +33,8 @@ def sample_pubsub(event, context):
     data = base64.b64decode(event['data']).decode('utf-8')
 
     current_app.logger.info(
-        f'This Function was triggered by messageId {context.event_id} published at {context.timestamp}',
-        extra={
-            'decoded_data': data,
-            'event': event,
-            'context': context
-        }
+        f'This Function was triggered by messageId {context.event_id} published at {context.timestamp}: \n'
+        f'decoded_data: {data} \n'
+        f'event: {pp.pformat(event, indent=2)} \n'
+        f'context: {context}'
     )
