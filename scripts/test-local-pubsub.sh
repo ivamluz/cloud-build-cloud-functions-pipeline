@@ -1,7 +1,7 @@
 #! /bin/bash
 
 RAW_MESSAGE=$1
-MESSAGE_BASE64=$(echo ${RAW_MESSAGE} | base64)
+MESSAGE_BASE64=$(echo -n ${RAW_MESSAGE} | base64)
 
 EVENT_PAYLOAD=$(
   sed -e \
