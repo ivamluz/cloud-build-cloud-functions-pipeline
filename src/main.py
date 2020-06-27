@@ -34,7 +34,7 @@ def sample_pubsub(event, context):
 
     current_app.logger.info(
         f'This Function was triggered by messageId {context.event_id} published at {context.timestamp}: \n'
-        f'decoded_data: {data} \n'
+        f'decoded_data: "{data}" \n'
         f'event: {pp.pformat(event, indent=2)} \n'
         f'context: {context}'
     )
