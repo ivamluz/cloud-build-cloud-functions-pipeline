@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source .env
+source .env.local
 
 curl "http://localhost:${FUNCTION_PORT_HTTP}/?subject=FooBar"
 echo

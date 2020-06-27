@@ -1,6 +1,6 @@
 #! /bin/bash
 
-source .env
+source .env.local
 
 functions-framework \
   --source=../src/main.py \

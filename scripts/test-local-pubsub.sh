@@ -9,7 +9,7 @@ EVENT_PAYLOAD=$(
     ./payloads/test-local-pubsub-payload.json
 )
 
-source .env
+source .env.local
 
 curl -X POST \
   -H'Content-type: application/json' \
