@@ -15,3 +15,5 @@ curl -X POST \
   -H'Content-type: application/json' \
   -d "${EVENT_PAYLOAD}" \
   "http://localhost:${FUNCTION_PORT_PUBSUB}"
+
+echo
