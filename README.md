@@ -7,7 +7,7 @@ This is a simple project developed with the intent to show:
 - how to develop and debug your application locally with [functions-framework-python](https://github.com/GoogleCloudPlatform/functions-framework-python).
 - how to automate the deployment of Cloud Functions with Cloud Build on Google Cloud Platform.
 
-Check the complete tutorial [here](#).
+Check the complete tutorial [here](https://medium.com/@ivam.santos/how-to-develop-debug-and-test-your-python-google-cloud-functions-on-your-local-dev-environment-d56ef94cb409).
 
 ## 2. Environment setup
 
@@ -79,3 +79,5 @@ From a different terminal window:
 $ ./test-local-http.sh
 Hello, FooBar!
 ```
+
+After everything is running, please make sure to keep reading the [tutorial](https://medium.com/@ivam.santos/how-to-develop-debug-and-test-your-python-google-cloud-functions-on-your-local-dev-environment-d56ef94cb409).
