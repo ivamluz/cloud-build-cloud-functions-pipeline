@@ -1,0 +1,8 @@
+steps:
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["./scripts/deploy-http.sh"]
+    waitFor: ["-"]
+
+  - name: "gcr.io/cloud-builders/gcloud"
+    args: ["./scripts/deploy-pubsub.sh"]
+    waitFor: ["-"]
