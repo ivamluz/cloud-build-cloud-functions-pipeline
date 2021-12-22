@@ -35,7 +35,7 @@ cd cloud-build-cloud-functions-pipeline
   pip install --upgrade -r requirements-dev.txt
   ```
 
-## 3. Run and testing the app locally
+## 3. Run and test the app locally
 
 ### 3.1 Testing the pub/sub example
 
